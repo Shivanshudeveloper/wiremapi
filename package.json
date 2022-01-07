@@ -1,0 +1,22 @@
+{
+  "name": "NodeJs-Atom",
+  "version": "0.0.1",
+  "description": "Atom Integration using Nodejs",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.13.2",
+    "cors": "^2.8.5",
+    "express": "^4.13.1",
+    "libxmljs": "0.15.0",
+    "node-fetch": "^3.1.0",
+    "node-gyp": "^3.8.0",
+    "xml-selector": "^0.3.0",
+    "xml2js": "^0.4.19"
+  }
+}
